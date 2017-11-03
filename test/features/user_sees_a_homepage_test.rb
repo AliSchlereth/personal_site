@@ -1,4 +1,5 @@
 require "./test/test_helper"
+require "pry"
 
 class HomepageTest < CapybaraTestCase
 
