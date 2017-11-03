@@ -6,7 +6,7 @@ class ErrorHandlingTest < CapybaraTestCase
     visit '/dogs'
 
     assert page.has_content("404")
-    assert page.has_content("This page does not exist")
+    assert page.has_content("Page not found")
     refute page.has_content("Welcome!")
   end
 
