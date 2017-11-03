@@ -15,6 +15,6 @@ class PersonalSite
   end
 
   def self.error
-    ['404', {'Content-Type' => 'text/html'}, File.read('./app/views/error.html')]
+    ['404', {'Content-Type' => 'text/html'}, [File.read('./app/views/error.html')]]
   end
 end
