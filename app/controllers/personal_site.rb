@@ -10,11 +10,11 @@ class PersonalSite
     end
   end
 
-  def index
+  def self.index
     ['200', {'Content-Type' => 'text/html'}, [File.read('./app/views/index.html')]]
   end
 
-  def error
-    ['400', {'Content-Type' => 'text/html'}, File.read('./app/views/error.html')]
+  def self.error
+    ['404', {'Content-Type' => 'text/html'}, File.read('./app/views/error.html')]
   end
 end
